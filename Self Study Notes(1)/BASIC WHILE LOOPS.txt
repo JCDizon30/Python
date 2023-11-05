@@ -1,0 +1,252 @@
+while = (A Statement that will repeat a block of code as long as it's condition is fulfilled)
+
+================================================================================================================
+
+age = 12
+
+while age < 18:
+    
+  print("Still Young : "+ str(age))
+  
+  age = age + 1
+
+ANSWER: Still Young : 12
+        Still Young : 13
+        Still Young : 14
+        Still Young : 15
+        Still Young : 16
+        Still Young : 17
+
+==================================================================================================================
+ELSE IN WHILE LOOP (else is added to the bottom of a while loop so that it can execute code when the loop is done)
+==================================================================================================================
+
+age = 12
+
+while age < 18:    
+    print("Still Young : "+ str(age))  
+    age = age + 1
+
+else:
+    print("Legal Age : " + str(age))
+
+ANSWER: Still Young : 12
+        Still Young : 13
+        Still Young : 14
+        Still Young : 15
+        Still Young : 16
+        Still Young : 17
+        Legal Age : 18
+
+===================================================================================================================================
+WILE loop in COLLECTIONS (while loop can used to access every item in a collection (list & tuples) since it is indexed and ordered)
+===================================================================================================================================
+
+#INDEX          0        1      2        3
+
+studentID = [2000123,2000124,2000125,2000126]
+i = 0
+
+while i <= 3:
+    print(studentID[i])
+    i = i + 1
+
+ANSWER: 2000123
+        2000124
+        2000125
+        2000126
+
+================================================================================================================
+
+studentID = [2000123,2000124,2000125,2000126,2000127,2000128,2000129,20001210]
+i = 0
+
+while i < len(studentID):
+    print(studentID[i])
+    i = i + 1
+
+ANSWER: 2000123
+        2000124
+        2000125
+        2000126
+        2000127
+        2000128
+        2000129
+        20001210
+
+================================================================================================================
+BREAK Keyword in WHILE loop (break keyword is used to stop the loop no matter what the condition is.
+================================================================================================================ 
+
+while True:
+    print("Hello World")
+
+    break
+
+ANSWER: Hello World
+
+=================================================================================================================
+CONDITIONS in WHILE Loop (You can use any Conditional Statement inside a While loop)
+=================================================================================================================
+
+print("Crush ka ba ng Crush Mo?")
+
+while True:
+
+    answer = input("Answer : ")
+
+    if answer == "hindi":
+        print("CORRECT")
+        break
+
+    else:
+        print("MALI KA DIYAN KAPATID")
+
+ANSWER: Crush ka ba ng Crush Mo?
+        Answer : oo
+        MALI KA DIYAN KAPATID
+
+        Crush ka ba ng Crush Mo?
+        Answer : oo
+        MALI KA DIYAN KAPATID
+
+        Crush ka ba ng Crush Mo?
+        Answer : oo
+        MALI KA DIYAN KAPATID
+
+        Crush ka ba ng Crush Mo?
+        Answer : hindi
+        CORRECT
+
+==================================================================================================================
+
+numbers = [1,2,3,4,5,6,7,8,9,10]
+
+i = 0
+
+while i < len(numbers):
+    if(numbers[i] % 2 == 0):
+        print("Even Number : " + str(numbers[i]))
+        
+    else:
+        print("Odd Number : " + str(numbers[i]))
+        
+    i = i + 1
+
+ANSWER: Odd Number : 1
+        Even Number : 2
+        Odd Number : 3
+        Even Number : 4
+        Odd Number : 5
+        Even Number : 6
+        Odd Number : 7
+        Even Number : 8
+        Odd Number : 9
+        Even Number : 10
+
+===================================================================================================================
+
+lives = 3
+correctAnswer =150
+
+while lives > 0:
+    answer = int(input("100 + 50 = ")) 
+ 
+    if answer == correctAnswer:
+        print("YOU WON")
+        break
+
+    else:
+        lives = lives - 1
+
+else:
+    print("YOU LOSE!")
+
+
+ANSWER1: 100 + 50 = 140
+        100 + 50 = 150
+        YOU WON
+
+ANSWER2: 100 + 50 = 50
+        100 + 50 = 233
+        100 + 50 = 33
+        YOU LOSE!
+
+==================================================================================================================
+==================================================================================================================
+
+i = 1
+while i <= 5:
+    print("John")
+    i = i + 1
+
+ANSWER:
+John
+John
+John
+John
+John
+
+===================================================================================================================
+
+i = 5
+while i >= 1:
+    print("John")
+    i = i - 1
+
+ANSWER:
+John
+John
+John
+John
+John
+
+===================================================================================================================
+
+i = 1
+j = 1
+
+while i <= 5:
+    print("John", end="")
+
+    while j <= 4:
+        print("Carlo", end="")
+        j = j + 1
+
+    i = i + 1
+
+ANSWER:
+John Carlo Carlo Carlo Carlo John John John John
+
+===================================================================================================================
+
+i = 1
+
+while i <= 5:
+    print("John", end="")
+
+    j = 1
+    
+    while j <= 4:
+        print("Carlo", end="")
+        j = j + 1
+
+    i = i + 1
+    print()
+
+ANSWER:
+John Carlo Carlo Carlo Carlo
+John Carlo Carlo Carlo Carlo
+John Carlo Carlo Carlo Carlo
+John Carlo Carlo Carlo Carlo
+John Carlo Carlo Carlo Carlo
+
+===================================================================================================================
+
+x = 0
+while True:
+    print(x)
+    x+=1
+    if x == 10000:
+        print("Done")
+        break

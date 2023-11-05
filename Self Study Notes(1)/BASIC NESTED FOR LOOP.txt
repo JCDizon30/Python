@@ -1,0 +1,170 @@
+NESTED FOR LOOP (a for loop inside a for loop commonly used to iterate through a multi-dimensional collection.)
+Using Range in Nested For Loops.
+
+=======================================================================================================================================================
+
+for x in range(5):                     print("*",end="")                  for x in range(5):                       for x in range(5):
+    for y in range(5):                 print("*")                             for y in range (5):                      for y in range(10):
+        print("*")                                                                print("*",end="")                        print("*")
+                                                                                                                       print("NEW LINE")
+ANSWER: *                                   ANSWER: **                    ANSWER: *************************
+        *                                                                                                          ANSWER: **********NEW LINE
+        *                                                                                                                  **********NEW LINE
+        *                                                                                                                  **********NEW LINE
+        *                                                                                                                  **********NEW LINE
+        *                                                                                                                  **********NEW LINE
+        *
+        *
+        *
+        *
+        *
+        *
+        *
+        *
+        *
+        *
+        *
+        *
+        *
+        *
+        *
+        *
+        *
+        *
+        *  
+
+======================================================================================================================================================
+Reading Multi-Dimensional Collections Using Nested For Loop
+======================================================================================================================================================
+
+courseStudents = [
+    ["BSIT,"David"],
+    ["BSIT,"Alenere"],
+    ["BSCS,"Patrick"],
+    ["BSCS,"Jaymar"],
+    ["BSCS,"Emman"]
+]
+
+print(courseStudent[0][1])
+
+ANSWER:
+David 
+
+======================================================================================================================================================
+
+courseStudents = [
+    ["BSIT,"David"],
+    ["BSIT,"Alenere"],
+    ["BSCS,"Patrick"],
+    ["BSCS,"Jaymar"],
+    ["BSCS,"Emman"]
+]
+
+for x in courseStudents:
+    print(x)
+
+ANSWER:
+["BSIT,"David"]
+["BSIT,"Alenere"]
+["BSCS,"Patrick"]
+["BSCS,"Jaymar"]
+["BSCS,"Emman"]
+
+======================================================================================================================================================
+
+courseStudents = [
+    ["BSIT,"David"],
+    ["BSIT,"Alenere"],
+    ["BSCS,"Patrick"],
+    ["BSCS,"Jaymar"],
+    ["BSCS,"Emman"]
+]
+
+for x in courseStudents:
+    print(x[0])
+
+ANSWER:
+BSIT
+BSIT
+BSCS
+BSCS
+BSCS
+
+======================================================================================================================================================
+
+courseStudents = [
+    ["BSIT,"David"],
+    ["BSIT,"Alenere"],
+    ["BSCS,"Patrick"],
+    ["BSCS,"Jaymar"],
+    ["BSCS,"Emman"]
+]
+
+for x in courseStudents:
+    print(x[1])
+
+ANSWER:
+David
+Alenere
+Patrick
+Jaymar
+Emman
+
+======================================================================================================================================================
+
+courseStudents = [
+    ["BSIT,"David"],
+    ["BSIT,"Alenere"],
+    ["BSCS,"Patrick"],
+    ["BSCS,"Jaymar"],
+    ["BSCS,"Emman"]
+]
+
+for listStudent in courseStudents:
+    for i in listStudent:
+        print(i)
+
+ANSWER:
+BSIT
+David
+BSIT
+Alenere
+BSCS
+Patrick
+BSCS
+Jaymar
+BSCS
+Emman
+
+======================================================================================================================================================
+
+courseStudents = [
+    ["BSIT,"David"],
+    ["BSIT,"Alenere"],
+    ["BSCS,"Patrick"],
+    ["BSCS,"Jaymar"],
+    ["BSCS,"Emman"]
+]
+
+for listStudent in courseStudents:
+    for i in listStudent:
+        print(i)
+    print()
+
+ANSWER:
+BSIT
+David
+
+BSIT
+Alenere
+
+BSCS
+Patrick
+
+BSCS
+Jaymar
+
+BSCS
+Emman
+
+

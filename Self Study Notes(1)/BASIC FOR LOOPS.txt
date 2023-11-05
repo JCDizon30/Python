@@ -1,0 +1,128 @@
+for (a statement that is commonly used to interate through a collection or to execute a block of code in a certain amount of times)
+for loop in collections (for loop can be used to access every item in a collection list and tuples in a very easy way)
+
+=====================================================================================================================================================
+             x        x        x
+fruits = ["Banana","Apple","Orange"]
+
+#for every x in fruits
+
+for x in fruits:
+    print(x)
+else:
+    print("No More Fruits")
+
+ANSWER: Banana
+        Apple
+        Orange
+        No More Fruits
+
+========================================================================================================================================================
+
+fruits = ["Banana","Apple","Orange"]
+
+#for every x in fruits
+
+for x in fruits:
+    print(x)
+    break
+
+ANSWER: Banana
+
+==========================================================================================================================================================
+Condition in For Loop (You can use any Conditional Statement inside a for loop)
+==========================================================================================================================================================
+
+
+fruits = ["Banana","Apple","Orange"]
+
+#for every x in fruits
+
+for x in fruits:
+    print(x)
+    if x == "Apple":
+        break
+
+ANSWER: Banana
+        Apple
+
+==========================================================================================================================================================
+
+fruits = ["Banana","Apple","Orange"]
+
+#for every x in fruits
+
+for x in fruits:
+    print(x)
+
+    if x == "Banana":
+        print("BANANA!!!")
+
+    elif: x == "Orange":
+        print("ORANGES!!!")
+
+ANSWER: Banana
+        BANANA!!!
+        Apple
+        Orange
+        ORANGE!!!
+
+==========================================================================================================================================================
+
+numbers = [1,2,3,4,5,6,7,8,9,10]
+
+for number in numbers:
+
+    if number % 2 == 0:
+        print("Even Numbers: " + str(number))
+
+    else:
+        print("Odd Numbers; " + str(number))
+
+ANSWER: Odd Numbers; 1
+        Even Numbers: 2
+        Odd Numbers; 3
+        Even Numbers: 4
+        Odd Numbers; 5
+        Even Numbers: 6
+        Odd Numbers; 7
+        Even Numbers: 8
+        Odd Numbers; 9
+        Even Numbers: 10
+
+==========================================================================================================================================================
+RANGE() in FOR loop (Loops a set of code in a specific number of times)
+==========================================================================================================================================================
+
+for x in range(10):                                  for x in range(5):
+    print(x)                                             print("Hello World")
+
+ANSWER: 0                                             ANSWER: Hello World
+        1                                                     Hello World
+        2                                                     Hello World
+        3                                                     Hello World
+        4                                                     Hello World
+        5
+        6
+        7
+        8
+        9
+
+==========================================================================================================================================================
+
+username = ["John","David","Jayson"]
+password = ["abc123","123abc","hahatdog"]
+
+PerUsername = input("Username: ")
+PerPassword = input("Password: ")
+
+for x in range(len(username)):
+    if PerUsername == username[x] and PerPassword == password[x]:
+        print("Welcome, " + username[x])
+        break
+
+else:
+    print("Access not found")
+
+
+

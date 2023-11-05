@@ -1,0 +1,66 @@
+1.)
+
+list = input().split()
+for x in list:
+    print(x)
+
+
+2.)
+
+nums2 = list(input().split(" "))
+for x in nums2:
+	if (int(x) % 2 == 0):
+		print(x)
+
+*****OTHER ANSWER
+
+list1 = [2,5,6]
+list2 = [33, 54, 32, 11, 8]
+for x in list1 + list2:
+    if x % 2 == 0:
+        print(x)
+
+
+3.)
+
+list = input().split(',')
+print(list[len(list) // 2])
+
+*****OTHER ANSWER
+
+list = input().split(',')
+print(list[1])
+
+
+4.)
+
+nums = int(input())
+list = []
+for x in range(nums):
+    list.append(int(input()))
+for x in range(nums - 1, -1, -1):
+    print(list[x])
+
+
+
+5.)
+
+list = [int(input())
+for x in range(int(input()))]
+if int(input()) in list:
+    print('Present')
+else:
+    print('None')
+
+
+
+6.)
+
+for x in nums:
+        print(x**2)
+
+
+*****OTHER ANSWER
+
+for x in nums:
+        print(x*x)

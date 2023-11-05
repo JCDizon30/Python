@@ -1,0 +1,335 @@
+CONDITIONAL STATEMENTS
+
+1. if (1 Condition)
+2. if-else (2 Conditions)
+3. if-elif-else (3 or More Conditions)
+4. Nested (Conditions after a Conditions)
+
+Comparison Operators - are used to evaluate certain conditions if they are true or false. 
+                       In Python, the supported comparison operators are the following:
+1. == (Returns True if value1 and value2 are equal)
+2. > (Returns True if value1 is greater than value2)
+3. >= (Returns True if value1 is greater than or equal to value2)
+4. < (Returns True if value1 is less than value2)
+5. <= (Returns True if value1 is less than or equal to value2)
+6. != (Returns True if value1 and value2 are not equal)
+
+Logical Operators - are useful when we need to evaluate two or more conditions 
+                    before a code is proven to be true or not. Here are the following:
+1. not (Returns TRUE if the condition is false)
+2. and (Returns TRUE only if both conditions are true)
+3. or (Returns TRUE if at least one of the conditions is true)
+============================================================================================================================
+
+a = 1
+b = 2
+
+if a < b:
+    print("a is less than b")
+    print("a is definitely less than b")
+print("Not sure if a is less than b")
+
+
+ANSWER: a is less than b
+        a is definitely less than b
+        Not sure if a is less than b
+============================================================================================================================
+
+Varnum = int(input())
+if (Varnum % 2) == 0:
+    print("Even Number")
+else:
+    print("Odd Number")
+
+ANSWER: 2
+        Even Number
+
+=========================================================================================================================
+c = 5
+d = 4
+
+if c < d:
+    print("c is less than d")
+
+else:
+    print("c is NOT less than d")
+    print("I don't think c is less than d")
+print("outside the if block")
+
+
+ANSWER: c is NOT less than d
+        I don't think c is less than d
+        outside the if block
+============================================================================================================================
+
+e = 20
+f = 8
+
+if e < f:
+    print("e is less than f")
+
+
+elif e == f:
+    print("e is equal to f")
+
+
+elif e > f + 10:
+    print("e is greater than f by more than 10")
+
+
+else:
+    print("e is greater than f")
+
+
+ANSWER: e is greater than f by more than 10
+============================================================================================================================
+
+g = 8
+h = 8
+
+if g < h:
+    print("g is less than h")
+
+else:
+    if g == h:
+        print(" g is equal to h")
+    else:
+        print("g is greater than h")
+
+
+ANSWER: g is equal to h
+============================================================================================================================
+
+name = "John"
+heigh = 2
+weight = 90
+
+bmi = weight / (height ** 2)
+print("bmi: ")
+print(bmi)
+
+if bmi < 25:
+    print(name)
+    print("is not overweight")
+
+else:
+    print(name)
+    print("is overweight")
+
+
+ANSWER: bmi:
+        22.5
+        John
+        is not overweight
+============================================================================================================================
+IF-ELIF-ELSE STATEMENT
+============================================================================================================================
+
+age =  int(input("Enter Your Age: "))
+
+if age >= 18:
+    print("Legal Age")
+
+else:
+    print("Too Young")
+print("Thank you For Using The Program")
+
+
+ANSWER: Enter Your Age: 18 
+        Legal Age
+        Thank you For Using The Program
+============================================================================================================================
+
+Password = input("Enter Password: ")
+
+if password == "123abc":
+    print("Access Granted")
+
+else:
+    print("Access Denied")
+
+
+ANSWER: Enter Password: 123abc
+        Access Granted
+============================================================================================================================
+
+age = int(input("Enter Your Age: "))
+
+if age >= 18:
+    print("Legal Age")
+
+elif age >= 13:
+    print("Teenager")
+
+elif age >= 5:
+    print("Child")
+
+else:
+    print("Too young")
+
+
+ANSWER: Enter Your Age: 11
+        Child
+============================================================================================================================
+NESTED CONDITIONAL STATEMENT - Used when dealing with Conditions Inside a Condition.
+============================================================================================================================
+
+age = int(input("Enter Your Age: "))
+height = int(input("Enter Your Height: "))
+
+if age >= 18:
+
+    if height >= 176:
+        print("Tall and Legal Age")
+
+    elif height >= 150:
+        print("Average and Legal Age")
+  
+    else:
+        print("Short and Legal Age")
+
+else:
+    print("Too Young")
+
+
+ANSWER: Enter Your Age: 19
+        Enter Your Height: 160
+        Average and Legal Age
+============================================================================================================================
+NOT KEYWORD
+============================================================================================================================
+
+age = int(input("Enter Your Age: ")
+
+if not age >= 18:
+    print("Too Young")
+
+else:
+    print("Legal Age")
+
+
+ANSWER: Enter Your Age: 19
+        Legal Age
+============================================================================================================================
+AND-OR LOGICAL OPERATORS
+============================================================================================================================
+
+age = int(input("Enter Your age: "))
+height = int(input("Enter Your Height: "))
+
+if age >= 18 and height >= 176:
+    print("Tall and Legal Age")
+
+elif age >= 18 and height >= 150:
+    print("Average and Legal Age")
+  
+elif age >= 18: 
+    print("Short and Legal Age")
+
+else:
+    print("Too Young")
+
+
+ANSWER: Enter Your Age: 18
+        Enter Your Height: 120
+        Short and Legal Age
+============================================================================================================================
+
+username = input("Enter Your Username: ")
+password = input("Enter Your Password: ")
+
+if username == "JCMDizon" and password == "john123":
+    print("Welcome John Dizon")
+
+elif username == "OmyEustass" and password == "admin1234":
+    print("Welcome Eustass")
+
+else:
+    print("Invalid Information")
+
+
+Answer: Enter Your Username: JCMDizon
+        Enter Your Password: john123
+        Welcome John Dizon
+============================================================================================================================
+
+#Teacher said you need to bring METERSTICK AND RULER
+
+hasMeterStick = False
+hasRuler = True
+
+if hasMeterStick and hasRuler:
+    print("Pasok Ka")
+
+else:
+    print("Pede ka ng Lumabas")
+
+ANSWER: Pede ka ng Lumabas
+============================================================================================================================
+
+#Teacher said you need to bring METERSTICK OR RULER
+
+hasMeterStick = False
+hasRuler = True
+hasBallpen = False
+
+if hasMeterStick or hasRuler or hasBallpen:
+    print("Pasok Ka")
+
+else:
+    print("Pede ka ng Lumabas")
+
+ANSWER: Pasok Ka
+============================================================================================================================
+COLLECTION CONDITION STATEMENTS - Used to check an item if it's in a collection (list and tuples).
+============================================================================================================================
+
+bag = ["wallet", "gun", "handkerchief"]
+
+if "gun" in bag:
+    print("Contraband!")
+
+else:
+    print("All Clear")
+
+ANSWER: Contraband
+============================================================================================================================
+
+bag = ["wallet", "handkerchief", "drugs"]
+
+if "gun" in bag or "drugs" in bag":
+    print("Contraband!")
+
+else:
+    print("All Clear")
+
+ANSWER: Contraband
+===========================================================================================================================================
+GRADE AVERAGE PROGRAM - Create a program that makes the user input 3 Grades so that the system could average it then check if the grade is: 
+===========================================================================================================================================
+
+Grade_Math = float(input("Math : "))
+Grade_Programming = float(input("Programming : "))
+Grade_Science = float(input("Science : "))
+
+Average = (Grade_Math + Grade_Programming + Grade_Science) /3
+
+print("Average : " + str(Average))
+
+if Average > 100 or Average <= 50:
+    print("INVALID GRADE")
+
+elif Average >= 98:
+    print("WITH HIGHEST HONORS")
+
+elif Average >= 95:
+    print("WITH HIGH HONORS")
+
+elif Average >= 90:
+    print("WITH HONORS")
+
+elif Average >= 75:
+    print("PASSED")
+
+else:
+    print("FAILED")

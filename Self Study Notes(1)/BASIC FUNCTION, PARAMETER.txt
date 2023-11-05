@@ -1,0 +1,117 @@
+Functions - use to organize and divide the codes, it can only run when it is called.
+
+
+def sayHello()
+    print("Hello")
+    print("World")
+
+sayHello()
+
+ANSWER:
+Hello
+World
+
+==================================================================================================================
+
+Arguments or Parameters - are value passed inside a function, used to perform task.
+
+
+def sayHello(firstName):
+    print("Hello, " + firstName)
+
+sayHello("John Carlo")
+
+
+ANSWER:
+Hello, John Carlo
+
+==================================================================================================================
+
+def sayHello(firstName,middleName,lastName):
+    print("Hello, " + firstName,middleName,lastName)
+
+sayHello("John Carlo","Magtoto","Dizon")
+
+
+ANSWER:
+Hello, John Carlo Magtoto Dizon
+
+==================================================================================================================
+
+def sayHello(firstName):
+    print("Hello,", firstName)
+
+name = input("Enter Name: ")
+sayHello(name)
+
+
+ANSWER:
+Enter Name: John Carlo
+Hello, John Carlo
+
+==================================================================================================================
+
+Return Values - value return after function is done executing, 
+                used to get result from a function that computes or does something that needs a result.
+
+
+def add(num1,num2):
+    return num1 + num2
+
+sum = add(5,3)
+print(sum)
+
+
+ANSWER:
+8
+
+==================================================================================================================
+
+def add(num1,num2):
+    return num1 + num2
+
+def subtract(num1,num2):
+    return num1 - num2
+
+sum = subtract(5,3)
+print(sum)
+
+
+ANSWER:
+2
+
+==================================================================================================================
+
+def legalAge(age):
+
+    if age >= 18:
+        return True
+    else:
+        return False
+        
+print(legalAge(18))
+
+
+ANSWER:
+True
+
+==================================================================================================================
+
+def add(num1,num2):
+    return num1+num2
+
+x = float(input("Enter Num1: "))
+y = float(input("Enter Num2: "))
+print("%.4f" % add(x,y))
+
+ANSWER:
+Enter Num1: 5
+Enter Num2: 5
+Total: 25.0000
+
+
+
+
+
+
+

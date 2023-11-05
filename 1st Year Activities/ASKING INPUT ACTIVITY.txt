@@ -1,0 +1,308 @@
+ASKING FOR INPUT
+
+1. 
+varname = input()
+varmsg = input()
+print(len(varname+varmsg))
+
+=================================================
+
+2.
+var1 = input()
+var2 = input()
+var3 = input()
+var4 = input()
+var5 = input()
+print(var1+',',var2+',',var3+',',var4+',',var5)
+
+=================================================
+
+3.
+varname = input()
+varmsg = input()
+print(varname)
+print(".")
+print(".")
+print(".")
+print(varmsg)
+
+=================================================
+
+4.
+print("\\")
+print("\\")
+print("\\")
+
+=================================================
+
+5.
+print('"'+"'")
+
+=================================================
+
+6.
+x, y = input().split()
+a = int(x)
+b = int(y)
+print(a % b)
+
+=================================================
+
+7.
+x, y, z = input().split()
+x = float(x)
+y = float(y)
+z = float(z)
+a = x*y*z
+print("%.1f" % a)
+
+=================================================
+
+8.
+number = int(input())
+import math
+print("%.2f" % math.sqrt(number))
+
+
+
+=================================================================================================================
+
+
+
+CONDITION QUIZ
+
+1.
+msg = input().lower()
+if msg[0] == msg[-1]:
+    print("Yes")
+else:
+    print("No")
+
+=================================================
+
+2.
+x = int(input())
+
+if x % 3 == 0 and x % 5 != 0:
+    print("Fizz")
+elif x % 5 == 0 and x % 3 != 0:
+    print("Buzz")
+else:
+    if x % 3 == 0 and x % 5 == 0:
+        print("FizzBuzz")
+
+=================================================
+
+3.
+x = int(input())
+if x % 2 == 0:
+    print("In")
+elif x % 1 == 0:
+    print("Out")
+
+=================================================
+
+4.
+x = str(input())
+if x[0] > x[1] and x[0] > x[2] and x[0] > x[3] and x[0] > x[4]:
+    print("Leftmost")
+elif x[4] > x[1] and x[4] > x[0] and x[4] > x[2] and x[4] > x[3]:
+    print("Rightmost")
+elif x[2] > x[0] and x[2] > x[1] and x[2] > x[3] and x[2] > x[4]:
+    print("Middle")
+else:
+    print("Unknown")
+
+=================================================
+
+5.
+var1,var2,var3,var4 = input().split()
+var1 = float(var1)
+var2 = float(var2)
+var3 = float(var3)
+var4 = float(var4)
+count = 0
+if (var1 > 0):
+    count = count+1
+if (var2 > 0):
+    count = count+1
+if (var3 > 0):
+    count = count+1
+if (var4 > 0):
+    count = count+1
+print(count)
+
+=================================================
+
+6.
+x, y = input().split()
+x = str(x)
+y = str(y)
+if x[0] == y and x[1] == y and x[2] == y:
+    print("Jackpot!")
+else:
+    print("Nah")
+
+=================================================
+
+7.
+x, y = input().split()
+x = float(x)
+y = float(y)
+if x > y:
+    print("Greater")
+else:
+    print("Lesser")
+
+=================================================
+
+8.
+name = "Cody"
+varname = "".join(input().split()).lower()
+if name.lower() == varname:
+    print("Correct")
+else:
+    print("Wrong")
+
+==================================================================================================================
+
+LOOPS QUIZ
+
+1.
+x = input()
+y = x.lower()
+letters = ["a","e","i","o","u"]
+zero = 0
+for i in y:
+    for l in letters:
+        if i==l:
+            zero+=1
+print(zero)
+
+=================================================
+
+2.
+x = int(input())
+for x in range(1,x+1):
+    if x % 3 == 0 and x % 5 == 0:
+        print("FizzBuzz")
+        continue 
+    elif x % 3 == 0 and x % 5 != 0:
+        print("Fizz")
+        continue 
+    elif x % 5 == 0 and x % 3 != 0:
+        print("Buzz")
+        continue 
+    print(x)
+
+=================================================
+
+3. tama
+var1 = int(input())
+num1 = 0
+num1_count = 0
+while var1:
+    if var1 % 10 == num1:
+        num1_count += 1
+        var1 = var1 // 10
+        continue
+        
+    if var1 % 10 != num1:
+        break
+print(num1_count)
+
+
+=================================================
+
+4.
+zero = 0
+while True:
+    x = float(input())
+    if x < 0:
+        zero += x
+    elif x == 0:
+        break
+print("%.3f" % zero)
+
+=================================================
+
+5.
+x = int(input())
+for x in range(1,x+1):
+    if x > 3:
+        print(x)
+
+=================================================
+
+6. 
+var1, var2 = input().split()
+var1 = int(var1)
+var2 = int(var2)
+if var1 < var2:
+    for i in reversed(range(var1, var2 + 1)):
+        if i % 2 == 0:
+            print(i)
+if var2 < var1:
+    for i in reversed(range(var2, var1 + 1)):
+        if i % 2 == 0:
+            print(i)
+
+=================================================
+
+7.
+var1 = int(input())
+result = 1
+while var1 > 0:
+    result = result * var1
+    var1 = var1 - 1
+print(result)
+
+=================================================
+
+8.
+var1, var2 = input().split()
+var1 = int(var1)
+var2 = int(var2)
+i = 1
+while (i <= var1 and i <= var2):
+    if (var1 % i == 0 and var2 % i == 0):
+        GCD = i
+    i = i + 1
+print(GCD)
+
+
+
+
+==================================================================================================================
+
+
+
+
+MACHINE PROBLEM # 1
+age = int(input("Enter The Programmer's dad's age: "))
+print("His age is " + str(age))
+if age >= 60:
+    print("Senior Citizen")
+
+
+
+=================================================
+
+
+MACHINE PROBLEM # 2
+n = int(input("Enter n: "))
+zero = 0
+one = 1
+sum = 0
+print("Fibonacci numbers = ", end="") 
+for i in range(n):
+    zero = one
+    one = sum
+    sum = zero + one   
+    print(sum, end=" ")
+
+
+
+
+
+
